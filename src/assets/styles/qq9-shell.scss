@@ -1,0 +1,95 @@
+.qq9-shell-page {
+  --qq9-bg: #d9dfeb;
+  --qq9-window: rgba(244, 247, 253, 0.82);
+  --qq9-blue: #4b97f6;
+  --qq9-blue-strong: #2f86ef;
+  --qq9-blue-soft: #dbe9fb;
+  --qq9-blue-panel: rgba(238, 244, 255, 0.86);
+  --qq9-sidebar: linear-gradient(180deg, #4f9df8 0%, #3f8ff2 100%);
+  --qq9-text: #151821;
+  --qq9-border: #e2e8f2;
+  --qq9-chat-bg: rgba(238, 242, 253, 0.82);
+  --qq9-chat-bubble: #ffffff;
+  --qq9-shadow: 0 18px 48px rgba(72, 92, 128, 0.16);
+  --qq9-window-radius: 24px;
+  --qq9-rail-width: clamp(72px, 5.8vw, 82px);
+  --qq9-list-width: clamp(302px, 23.8vw, 336px);
+  --qq9-panel-width: clamp(214px, 16.8vw, 244px);
+
+  --qq9-easing-standard: cubic-bezier(0.2, 0, 0.2, 1);
+  --qq9-easing-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --qq9-easing-accelerate: cubic-bezier(0.2, 0, 1, 1);
+  --qq9-duration-fast: 120ms;
+  --qq9-duration-normal: 200ms;
+  --qq9-duration-slow: 300ms;
+}
+
+@keyframes qq9-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes qq9-slide-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes qq9-slide-in-right {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.qq9-panel-slide-enter-active {
+  animation: qq9-slide-in-right var(--qq9-duration-slow) var(--qq9-easing-standard) both;
+}
+
+.qq9-panel-slide-leave-active {
+  animation: qq9-slide-in-right var(--qq9-duration-fast) var(--qq9-easing-accelerate) both reverse;
+}
+
+.qq9-shell-page,
+.qq9-shell-page * {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'SF Pro Text',
+    'PingFang SC',
+    'Microsoft YaHei',
+    'Helvetica Neue',
+    sans-serif;
+}
+
+.qq9-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(131, 147, 178, 0.45) transparent;
+}
+
+.qq9-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.qq9-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(131, 147, 178, 0.42);
+}
+
+.qq9-avatar-stack {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  overflow: hidden;
+}
+
+.qq9-window-dots {
+  display: inline-flex;
+  gap: 9px;
+}
+
+.qq9-window-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 999px;
+  background: rgba(108, 150, 204, 0.48);
+}

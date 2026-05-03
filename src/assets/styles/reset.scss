@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'SF Pro Text',
+    'PingFang SC',
+    'Microsoft YaHei',
+    'Helvetica Neue',
+    sans-serif;
+}
+
+button,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1;
+  margin: 0;
+}

@@ -1,0 +1,41 @@
+{
+  "name": "qq-agent",
+  "private": false,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite",
+    "dev:vercel": "vercel dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "test": "npm run test:unit",
+    "test:unit": "vitest run",
+    "eslint": "eslint src --ext .js,.vue,.ts,.tsx --ignore-path .gitignore --fix",
+    "prettier": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\""
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-vue": "^9.23.0",
+    "jsdom": "^24.1.3",
+    "prettier": "^3.2.5",
+    "sass": "^1.72.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6",
+    "vitest": "^2.1.5",
+    "vue-tsc": "^3.2.7"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-darwin-arm64": "4.13.0"
+  }
+}

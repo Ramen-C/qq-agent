@@ -1,0 +1,21 @@
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  color: #151821;
+  background: #d7ddea;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
